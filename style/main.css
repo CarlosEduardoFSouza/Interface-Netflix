@@ -1,0 +1,154 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: transparent;
+    transition: all ease 0.5s;
+}
+
+.img-logo{
+    height: 25px;
+}
+.img-logo img {
+    height: 100%;
+    cursor: pointer;
+}
+.img-user {
+    height: 35px;
+}
+.img-user img {
+    height: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/*filme principal*/
+
+.container {
+    margin-left: 15px;
+}
+
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(to right, #111 30%, transparent 70%),  url('/img/el\ marginal.jpg');
+    height:800px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.descricao{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.descricao-pontos, 
+.descricao-ano, 
+.descricao-temp {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.descricao-pontos {
+    color: #46d369;
+}
+
+.filme-principal .descricao{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+.botao {
+    margin-top: 65px;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 12px;
+    border: 0px;
+    margin-right: 5px;
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.botao:hover{
+    opacity: 0.7;
+}
+
+
+.box-filme{
+    margin-top: 0.01%;
+    height: 0.01%;
+    display: block;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+.box-filme:hover{
+    transform: scale(1);
+    
+}
+
+.carrosel-filmes h3{
+    margin: 15px 0px 0px 30px;
+}
+
+.carrosel-filmes{
+    margin-top:5px;
+    margin-left: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

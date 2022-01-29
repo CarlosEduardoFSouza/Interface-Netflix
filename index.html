@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="img-logo">
+            <img src="img/2560px-Netflix_2015_logo.svg.png" alt="Netflix"/>
+        </div>
+        <div class="img-user">
+            <img src="img/user.jpg" alt="Usuario"/>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">El marginal</h3>
+
+                <div class="descricao">
+                    <div class="descricao-pontos"> 8.2 pontos</div>
+                    <div class="descricao-ano">2016</div>
+                    <div class="descricao-temp">4 Temporadas</div>
+                </div>   
+
+                <p class="descricao">Um ex-policial se infiltra em uma penitenciária para investigar um sequestro e precisa evitar que uma facção de detentos descubra sua identidade.</p>
+
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
+                        Assistir
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        Minha Lista
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <h3>Originais Netflix</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+                </div>    
+            </div>
+    </div>
+    <div class="carrosel-filmes">
+        <h3>Em Alta</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/emAlta1.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/emAlta2.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/emAlta3.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/emAlta4.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/emAlta5.jpg" alt="" srcset="">
+                </div>
+            </div>
+    </div>
+    <div class="carrosel-filmes">
+        <h3>Ação</h3>
+            <div class="owl-carousel owl-theme">    
+                <div class="item">
+                    <img class="box-filme" src="img/acao1.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/acao2.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/acao3.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/acao4.jpg" alt="" srcset="">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/acao5.jpg" alt="" srcset="">
+                </div>
+            </div>
+    </div>
+    
+ 
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+ 
+    <script>
+         useEffect(()=>{
+    const scrollListener = () => {
+      if(window.scrollY > 90) {
+        setBlackHeader(true);
+      } else {
+        setBlackHeader(false);
+      }
+
+  }
+
+    window.addEventListener('scroll', scrollListener);
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    }
+  }, []);
+
+    </script>
+ 
+</body>
+</html>
